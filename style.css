@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'HankenM';
+  src: url(/assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+body{
+  padding-block: 10px 10px;
+  height: 100%;
+  font-family: "HankenM"
+}
+.main{
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  left: 50%;
+  border: .1px solid hsl(224, 30%, 27%);
+  padding: 30px 15px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  box-shadow: inset 0px 0px 7px hsla(224, 30%, 27%, .5);
+}
+h1{
+  display: flex;
+  text-align: left;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 5px;
+}
+h1 .name{
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  opacity: .7;
+}
+h1 i{
+  font-size: 10px;
+  margin-left: 3px;
+}
+.inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputs input,
+.inputs button{
+  height: 45px;
+  margin-bottom: 5px;
+  border: none;
+}
+.inputs input{
+  padding-inline: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: hsl(224, 30%, 27%);
+  border: 1px solid hsl(234, 85%, 45%);
+  outline: none;
+}
+button{
+  height: 35px;
+  background: hsl(234, 85%, 45%);
+  color: #FFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px hsla(224, 30%, 27%, .5);
+}
+.todos{
+  position: relative;
+  width: 100%;
+  height: 282px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 2px 3px;
+}
+.todo-lists h3{
+  padding-block: 10px;
+  color: hsl(224, 30%, 27%);
+}
+.todo-lists .todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding-left: 5px;
+  background: hsla(234, 85%, 45%, 0.1);
+  box-shadow: 0px 3px 5px hsla(224, 30%, 27%, .5);
+}
+.todo .check{
+  color: hsl(224, 30%, 27%);
+  margin-right: 3px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #FFFF;
+}
+.todo .task{
+  width: 100%;
+  word-wrap: break-word;
+  text-align: left;
+  padding-inline: 7px 2px;
+  font-weight: 550;
+  outline: none;
+}
+.todo .tools{
+  display: flex;
+  
+}
+.tools .btn{
+  display: flex;
+  width: 100%;
+  padding: 1px 10px;
+  background: #FFFF;
+  color: hsla(234, 85%, 45%, .8);
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: none;
+}
+.btn i{
+  position: relative;
+  font-size: 13px;
+  font-weight: 900;
+}
+.btn:nth-child(2){
+  color: red;
+  opacity: .8;
+}
+.noTodos{
+  font-size: 17px;
+  font-weight: 500;
+  opacity: .5;
+  padding-bottom: 10px;
+  display: none;
+}
